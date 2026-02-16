@@ -122,8 +122,7 @@ function App() {
         setIsSpinning(false);
         return;
       }
-
-      // Find prize index for animation
+ 
       const prizeIndex = prizes.findIndex((p) => p.id === result.prize.id);
       setSelectedPrizeIndex(prizeIndex >= 0 ? prizeIndex : 0);
 
