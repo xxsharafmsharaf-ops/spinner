@@ -9,51 +9,52 @@ export const prizes: Prize[] = [
   {
     id: '1',
     label: 'عرض الاخوات',
-    weight: 10,
+    weight: 2,
     category: 'family',
   },
   {
     id: '2',
     label: 'عرض الاهتمام',
-    weight: 15,
+    weight: 3,
     category: 'special',
   },
   {
     id: '3',
     label: 'عرض الفنانين',
-    weight: 12,
+    weight: 2.5,
     category: 'artists',
   },
   {
     id: '4',
     label: 'عرض الكبير',
-    weight: 8,
+    weight: 1.5,
     category: 'premium',
   },
   {
     id: '5',
     label: 'عرض الكرم',
-    weight: 15,
+    weight: 3,
     category: 'generosity',
   },
   {
     id: '6',
-    label: 'عرض الكييفه',
-    weight: 12,
-    category: 'group',
+    label: 'حاول مرة أخرى',
+    weight: 40,
+    category: 'try-again',
   },
   {
-    id: '7',
-    label: 'عرض البؤساء',
-    weight: 10,
-    category: 'special',
+    id: '7', 
+    label: 'حظ سيء',
+    weight: 40,
+    category: 'hard-luck',
   },
   {
     id: '8',
     label: 'عرض الحلويات',
-    weight: 18,
+    weight: 3.5,
     category: 'sweets',
-  },
+  }
+ 
 ];
 
 // Calculate total weight for probability distribution

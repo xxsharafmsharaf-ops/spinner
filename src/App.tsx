@@ -130,13 +130,10 @@ function App() {
       setSpinResult({
         prize: result.prize,
         couponCode: result.couponCode,
-      });
-
-      // Mark device as spun (ALL protection layers - permanent)
+      }); 
       markDeviceAsSpun();
       setHasSpun(true);
-      
-      // Save result for reopening (persists after browser close)
+       
       saveSpinResult({
         spinResult: {
           prize: result.prize,
@@ -144,9 +141,7 @@ function App() {
         },
         userData: formData,
       });
-      
-      // Show success message
-      alert('🎡 جاري الدوران... 🎉');
+       
     } catch (error) {
       console.error('Spin error:', error);
       alert('⚠️ حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.');
